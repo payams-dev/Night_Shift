@@ -110,10 +110,11 @@ public class MainMenuScreen extends ScreenAdapter {
 
 		// Multi-line Title Layout - All text is White, uniformly scaled
 		Table titleTable = new Table();
+        
 		Label line1 = new Label("Night", titleStyle); line1.setFontScale(1.6f);
 		Label line2 = new Label("Shift", titleStyle); line2.setFontScale(1.6f);
 		Label line3 = new Label("at", titleStyle); line3.setFontScale(1.6f);
-		Label line4 = new Label("Nedd Bear's", titleStyle); line4.setFontScale(1.6f); // REMOVED ALL RED COLOR
+		Label line4 = new Label("Hare's", titleStyle); line4.setFontScale(1.6f);
 
 		titleTable.add(line1).left().row();
 		titleTable.add(line2).left().row();
