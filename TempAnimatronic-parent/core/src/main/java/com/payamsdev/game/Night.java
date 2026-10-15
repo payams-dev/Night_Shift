@@ -13,11 +13,11 @@ public class Night {
 	private final PowerManager powerManager;
 
 	// The New Mediocre Melodies Roster
-	private final HappyFrog happyFrog;
-	private final MrHippo mrHippo;
+	private final EnemyVariantA enemyVariantA;
+	private final EnemyVariantB enemyVariantB;
 	private final TempAnimatronic temp_animatronic;
-	private final OrvilleElephant orvilleElephant;
-	private final PigPatch pigPatch;
+	private final EnemyVariantC enemyVariantC;
+	private final EnemyVariantD enemyVariantD;
 	private final List<Animatronic> animatronics;
 
 	private int currentHour = 0;
@@ -32,14 +32,14 @@ public class Night {
 		this.powerManager = new PowerManager();
 
 		// Instantiate your brand-new custom roster using the new config values
-		this.happyFrog = new HappyFrog(config.happyFrogAi());
-		this.mrHippo = new MrHippo(config.mrHippoAi());
+		this.enemyVariantA = new EnemyVariantA(config.enemyVariantAAi());
+		this.enemyVariantB = new EnemyVariantB(config.enemyVariantBAi());
 		this.temp_animatronic = new TempAnimatronic(config.temp_animatronicAi());
-		this.orvilleElephant = new OrvilleElephant(config.orvilleElephantAi());
-		this.pigPatch = new PigPatch(config.pigPatchAi());
+		this.enemyVariantC = new EnemyVariantC(config.enemyVariantCAi());
+		this.enemyVariantD = new EnemyVariantD(config.enemyVariantDAi());
 
 		// Pack them all safely into your tick tracking list
-		this.animatronics = List.of(happyFrog, mrHippo, temp_animatronic, orvilleElephant, pigPatch);
+		this.animatronics = List.of(enemyVariantA, enemyVariantB, temp_animatronic, enemyVariantC, enemyVariantD);
 	}
 
 	/**
@@ -88,17 +88,17 @@ public class Night {
 		// (Java 8 format)
 		switch (hour) {
 		case 2:
-			happyFrog.incrementAI(1);
+			enemyVariantA.incrementAI(1);
 			break;
 		case 3:
-			happyFrog.incrementAI(1);
+			enemyVariantA.incrementAI(1);
 			temp_animatronic.incrementAI(1);
-			pigPatch.incrementAI(1);
+			enemyVariantD.incrementAI(1);
 			break;
 		case 4:
-			happyFrog.incrementAI(1);
+			enemyVariantA.incrementAI(1);
 			temp_animatronic.incrementAI(1);
-			orvilleElephant.incrementAI(1);
+			enemyVariantC.incrementAI(1);
 			break;
 		default:
 			// No boosts for hours 1, 5, or 6

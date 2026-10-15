@@ -19,7 +19,7 @@ public class Lwjgl3Launcher {
         Lwjgl3ApplicationConfiguration configuration = new Lwjgl3ApplicationConfiguration();
         
         // Custom FNAF Title Branding
-        configuration.setTitle("Five Nights at Nedd Bear's");
+        configuration.setTitle("Night Shift at Hare's");
         
         configuration.useVsync(true);
         

@@ -8,50 +8,50 @@ public final class NightConfig {
     public static final int DEFAULT_SECONDS_PER_HOUR = 86;
 
     private final int nightNumber;
-    private final int happyFrogAi;
-    private final int mrHippoAi;
+    private final int enemyVariantAAi;
+    private final int enemyVariantBAi;
     private final int temp_animatronicAi;
-    private final int orvilleElephantAi;
-    private final int pigPatchAi;
+    private final int enemyVariantCAi;
+    private final int enemyVariantDAi;
     private final int secondsPerHour;
 
-    public NightConfig(int nightNumber, int happyFrogAi, int mrHippoAi, int temp_animatronicAi, int orvilleElephantAi, int pigPatchAi, int secondsPerHour) {
+    public NightConfig(int nightNumber, int enemyVariantAAi, int enemyVariantBAi, int temp_animatronicAi, int enemyVariantCAi, int enemyVariantDAi, int secondsPerHour) {
         this.nightNumber = nightNumber;
-        this.happyFrogAi = happyFrogAi;
-        this.mrHippoAi = mrHippoAi;
+        this.enemyVariantAAi = enemyVariantAAi;
+        this.enemyVariantBAi = enemyVariantBAi;
         this.temp_animatronicAi = temp_animatronicAi;
-        this.orvilleElephantAi = orvilleElephantAi;
-        this.pigPatchAi = pigPatchAi;
+        this.enemyVariantCAi = enemyVariantCAi;
+        this.enemyVariantDAi = enemyVariantDAi;
         this.secondsPerHour = secondsPerHour;
     }
 
     // Overloaded constructor that uses the standard 86-second hour length automatically
-    public NightConfig(int nightNumber, int happyFrogAi, int mrHippoAi, int temp_animatronicAi, int orvilleElephantAi, int pigPatchAi) {
-        this(nightNumber, happyFrogAi, mrHippoAi, temp_animatronicAi, orvilleElephantAi, pigPatchAi, DEFAULT_SECONDS_PER_HOUR);
+    public NightConfig(int nightNumber, int enemyVariantAAi, int enemyVariantBAi, int temp_animatronicAi, int enemyVariantCAi, int enemyVariantDAi) {
+        this(nightNumber, enemyVariantAAi, enemyVariantBAi, temp_animatronicAi, enemyVariantCAi, enemyVariantDAi, DEFAULT_SECONDS_PER_HOUR);
     }
 
     public int nightNumber() {
         return nightNumber;
     }
 
-    public int happyFrogAi() {
-        return happyFrogAi;
+    public int enemyVariantAAi() {
+        return enemyVariantAAi;
     }
 
-    public int mrHippoAi() {
-        return mrHippoAi;
+    public int enemyVariantBAi() {
+        return enemyVariantBAi;
     }
 
     public int temp_animatronicAi() {
         return temp_animatronicAi;
     }
 
-    public int orvilleElephantAi() {
-        return orvilleElephantAi;
+    public int enemyVariantCAi() {
+        return enemyVariantCAi;
     }
 
-    public int pigPatchAi() {
-        return pigPatchAi;
+    public int enemyVariantDAi() {
+        return enemyVariantDAi;
     }
 
     public int secondsPerHour() {

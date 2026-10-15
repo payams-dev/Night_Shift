@@ -2,16 +2,16 @@ package com.payamsdev.animatronics;
 
 import com.payamsdev.position.CameraLocationList;
 
-public class PigPatch extends Animatronic {
+public class EnemyVariantB extends Animatronic {
 
-	// 298 frames = ~4.97 seconds
-	public PigPatch(int aiLevel) {
-		super("Pig Patch", CameraLocationList.SHOW_STAGE, aiLevel, 298);
+	// 301 frames = ~5.01 seconds
+	public EnemyVariantB(int aiLevel) {
+		super("Mr. Hippo", CameraLocationList.OFFICE, aiLevel, 301);
 	}
 
 	@Override
 	public void move() {
-		// Pig Patch path logic
+		// very small chance to appear in office, and is dismissed by a one second camera flip
 	}
 
 	@Override

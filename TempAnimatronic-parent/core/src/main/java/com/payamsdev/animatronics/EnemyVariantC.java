@@ -2,16 +2,17 @@ package com.payamsdev.animatronics;
 
 import com.payamsdev.position.CameraLocationList;
 
-public class MrHippo extends Animatronic {
+public class EnemyVariantC extends Animatronic {
 
 	// 301 frames = ~5.01 seconds
-	public MrHippo(int aiLevel) {
-		super("Mr. Hippo", CameraLocationList.OFFICE, aiLevel, 301);
+	public EnemyVariantC(int aiLevel) {
+		super("Orville Elephant", CameraLocationList.PIRATE_COVE, aiLevel, 301);
 	}
 
 	@Override
 	public void move() {
-		// very small chance to appear in office, and is dismissed by a one second camera flip
+		// Magician's cove stage progression / magic teleportation logic (the same as
+		// foxy sprint, hear the noise, and you have a set time to react)
 	}
 
 	@Override

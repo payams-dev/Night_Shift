@@ -2,17 +2,16 @@ package com.payamsdev.animatronics;
 
 import com.payamsdev.position.CameraLocationList;
 
-public class OrvilleElephant extends Animatronic {
+public class EnemyVariantD extends Animatronic {
 
-	// 301 frames = ~5.01 seconds
-	public OrvilleElephant(int aiLevel) {
-		super("Orville Elephant", CameraLocationList.PIRATE_COVE, aiLevel, 301);
+	// 298 frames = ~4.97 seconds
+	public EnemyVariantD(int aiLevel) {
+		super("Pig Patch", CameraLocationList.SHOW_STAGE, aiLevel, 298);
 	}
 
 	@Override
 	public void move() {
-		// Magician's cove stage progression / magic teleportation logic (the same as
-		// foxy sprint, hear the noise, and you have a set time to react)
+		// Pig Patch path logic
 	}
 
 	@Override

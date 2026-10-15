@@ -4,10 +4,10 @@ package com.payamsdev.animatronics;
 
 import com.payamsdev.position.CameraLocationList;
 
-public class HappyFrog extends Animatronic {
+public class EnemyVariantA extends Animatronic {
 
 	// 299 frames = ~4.98 seconds
-	public HappyFrog(int aiLevel) {
+	public EnemyVariantA(int aiLevel) {
 		super("Happy Frog", CameraLocationList.SHOW_STAGE, aiLevel, 299);
 	}
 
