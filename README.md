@@ -11,7 +11,7 @@
 
 > **Portfolio scope:** This is a work-in-progress engineering project, not a finished game. The repository demonstrates its current Java architecture, game-state components, desktop launcher, and presentation work. Some art, object names, and gameplay systems are provisional; their presence does not imply final functionality or balancing.
 
-[Night Shift at Hare's — in-game main menu](screenshots/main-menu.png)
+![Night Shift at Hare's — in-game main menu](screenshots/main-menu.png)
 
 
 ## Contents
