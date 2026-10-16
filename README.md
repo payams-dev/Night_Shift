@@ -12,6 +12,7 @@
 > **Portfolio scope:** This is a work-in-progress engineering project, not a finished game. The repository demonstrates its current Java architecture, game-state components, desktop launcher, and presentation work. Some art, object names, and gameplay systems are provisional; their presence does not imply final functionality or balancing.
 
 ![Night Shift at Hare's — in-game main menu](screenshots/main-menu.png)
+*In-engine screenshot of the current Java/libGDX prototype, featuring an original Blender-rendered endoskeleton. Visuals and interface remain in development.*
 
 
 ## Contents
